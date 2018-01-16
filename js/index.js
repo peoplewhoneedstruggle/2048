@@ -4,7 +4,7 @@ newgame();
 }); 
 
 
-
+//自己偷懒所以几乎没怎么注释
 var score=0;  
 var board=[];   
 var added=[]; 
@@ -139,29 +139,7 @@ function backgroungColor(i){
     case 8192:  
         return "#93c";  
         break;
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-  }
- 
-  
-  
-  
-  
-  
-  
-  
+      }
 }
 function isaddedArray(){//将判断能否合并的数组值置为0  
     for(var i = 0;i<4;i++){ 
@@ -293,7 +271,6 @@ function moveUp(){
             board[k+1][j]=board[i][j];
             board[i][j]=0;
             showMoveAnimation(i,j,k+1,j); 
-          
           }
           else {
             showMoveAnimation(i,j,k,j);  
@@ -303,8 +280,7 @@ function moveUp(){
             score+=board[k][j];
           }break;
         }
-          }
-            
+        }
       }
     }
 setTimeout("updateBoardView()",200); 
